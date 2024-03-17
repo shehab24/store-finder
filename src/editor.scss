@@ -1,0 +1,14 @@
+$primaryColor: #4527a4;
+
+.storefindNowEditing {
+  outline: 2px solid $primaryColor;
+}
+
+.storefindInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,32 @@
+.select_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.select_child_box {
+  width: 50%;
+}
+.select_child_box select {
+  width: 100%;
+  padding: 10px;
+}
+.show_store_search_result {
+  width: 100%;
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.search_box {
+  position: absolute;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+.search_box input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
