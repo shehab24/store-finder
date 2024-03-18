@@ -15,25 +15,6 @@
       "type": "string",
       "default": ""
     },
-    "selectVal": {
-      "type": "string",
-      "default": ""
-    },
-    "storeDetails": {
-      "type": "object",
-      "default": {
-        "storeName": "",
-        "storeAddress": "",
-        "storeMobile": "",
-        "storeEmail": "",
-        "storeOpeningClosing": "",
-        "storeMap": "",
-        "storeWebsite": "",
-        "storePostcode": "",
-        "storeCountry": "",
-        "storeContinent": ""
-      }
-    },
     "items": {
       "type": "array",
       "default": [

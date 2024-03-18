@@ -22,19 +22,7 @@ class STOREFINDStoreFinder{
 	}
 
 	function render( $attributes ){
-		extract( $attributes );
-
-		wp_enqueue_style( 'storefind-store-finder-style' );
-		wp_enqueue_script( 'storefind-store-finder-script', STOREFIND_DIR_URL . 'dist/script.js', [ 'react', 'react-dom' ], STOREFIND_VERSION, true );
-		wp_set_script_translations( 'storefind-store-finder-script', 'store-finder', STOREFIND_DIR_PATH . 'languages' );
-
-		$className = $className ?? '';
-		$blockClassName = "wp-block-storefind-store-finder $className align$align";
-
-		ob_start(); ?>
-		<div class='<?php echo esc_attr( $blockClassName ); ?>' id='storefindStoreFinder-<?php echo esc_attr( $cId ) ?>' data-attributes='<?php echo esc_attr( wp_json_encode( $attributes ) ); ?>'></div>
-
-		<?php return ob_get_clean();
+		return do_shortcode( '[store-finder]' );
 	}
 }
 new STOREFINDStoreFinder();

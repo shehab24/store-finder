@@ -62,218 +62,26 @@ class Store_Finder_Menu_Page_Add{
 
   public function strfn_admin_menu_page_add_callback(){
     ?>
-        <div class="main_div">
-              <div class="page_header_title">
-                <h3>Create Store</h3>
-           
+        <div class="wrap">
+          <div class="page_header_div">
+            <h2>How its Works?</h2>
+          </div>
+           <div class="working_div">
+             <div class="work">
+              <h3>01. Add This Shortcode</h3>
+              <div class="shortcode_img_box">
+                <img src="<?php echo esc_url(STOREFIND_DIR_URL .'assets/image/store-finder.jpg'); ?>" alt="">
               </div>
-              <div class="add_store_form">
-                    <form id="save_store_data_form">
-                      <div class="input_field_both">
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeName" class="form-label">Email Store Name</label>
-                                <input type="text" class="form-control" id="storeName" name="storeName" required >
-                            </div>
-                        </div>
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeAddress" class="form-label">Enter Store Address</label>
-                                <input type="text" class="form-control" id="storeAddress" name="storeAddress" required>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="input_field_both mt-4">
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeMobile" class="form-label">Email Store Mobile</label>
-                                <input type="number" class="form-control" id="storeMobile" name="storeMobile" required>
-                            </div>
-                        </div>
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeEmail" class="form-label">Enter Store Email</label>
-                                <input type="email" class="form-control" id="storeEmail" name="storeEmail" required>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="input_field_both mt-4">
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeWebsite" class="form-label">Email Store Website</label>
-                                <input type="url" class="form-control" id="storeWebsite" placeholder="https://example.com" name="storeWebsite" required>
-                            </div>
-                        </div>
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeMap" class="form-label">Enter Store Map Url</label>
-                                <input type="url" class="form-control" id="storeMap" placeholder="https://maps.app.goo.gl/V29Fe6Hj5YcE8bfj8" name="storeMap" required>
-                              </div>
-                        </div>
-                      </div>
-                      
-                      <div class="input_field_both mt-4">
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storePostcode" class="form-label">Email Postcode</label>
-                                <input type="number" class="form-control" id="storePostcode"   name="storePostcode" required>
-                            </div>
-                        </div>
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="storeOpeningClosing" class="form-label">Enter Store Opening & Closing Time</label>
-                                <input type="text" class="form-control" id="storeOpeningClosing" placeholder="11:00am to 8:00pm" name="storeOpeningClosing" required>
-                              </div>
-                        </div>
-                      </div>
-                      
-                      <div class="input_field_both mt-4">
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="continent-select" class="form-label">Select Continent</label>
-                                <select id="continent-select" class="form-control" name="continentSelect" required>
-                                  <option >Select one</option>
-                                  <option value="AF">Africa</option>
-                                  <option value="AN">Antarctica</option>
-                                  <option value="AS">Asia</option>
-                                  <option value="EU">Europe</option>
-                                  <option value="NA">North America</option>
-                                  <option value="OC">Oceania</option>
-                                  <option value="SA">South America</option>
-                                </select>
-
-                            </div>
-                        </div>
-                        <div class="input_field_div">
-                              <div class="mb-3">
-                                <label for="country-select" class="form-label">Select Country</label>
-                                <select id="country-select" class="form-control" name="countrySelect" required>
-                                                  <option >Select one</option>
-                                                  <option value="AF">Afghanistan</option>
-                                                  <option value="AL">Albania</option>
-                                                  <option value="DZ">Algeria</option>
-                                                  <option value="AS">American Samoa</option>
-                                                  <option value="AD">Andorra</option>
-                                                  <option value="AO">Angola</option>
-                                                  <option value="AI">Anguilla</option>
-                                                  <option value="AQ">Antarctica</option>
-                                                  <option value="AG">Antigua and Barbuda</option>
-                                                  <option value="AR">Argentina</option>
-                                                  <option value="AM">Armenia</option>
-                                                  <option value="AW">Aruba</option>
-                                                  <option value="AU">Australia</option>
-                                                  <option value="AT">Austria</option>
-                                                  <option value="AZ">Azerbaijan</option>
-                                                  <option value="BS">Bahamas</option>
-                                                  <option value="BH">Bahrain</option>
-                                                  <option value="BD">Bangladesh</option>
-                                                  <option value="BB">Barbados</option>
-                                                  <option value="BY">Belarus</option>
-                                                  <option value="BE">Belgium</option>
-                                                  <option value="BZ">Belize</option>
-                                                  <option value="BJ">Benin</option>
-                                                  <option value="BM">Bermuda</option>
-                                                  <option value="BT">Bhutan</option>
-                                                  <option value="BO">Bolivia</option>
-                                                  <option value="BA">Bosnia and Herzegovina</option>
-                                                  <option value="BW">Botswana</option>
-                                                  <option value="BV">Bouvet Island</option>
-                                                  <option value="BR">Brazil</option>
-                                                  <option value="IO">British Indian Ocean Territory</option>
-                                                  <option value="BN">Brunei Darussalam</option>
-                                                  <option value="BG">Bulgaria</option>
-                                                  <option value="BF">Burkina Faso</option>
-                                                  <option value="BI">Burundi</option>
-                                                  <option value="KH">Cambodia</option>
-                                                  <option value="CM">Cameroon</option>
-                                                  <option value="CA">Canada</option>
-                                                  <option value="CV">Cape Verde</option>
-                                                  <option value="KY">Cayman Islands</option>
-                                                  <option value="CF">Central African Republic</option>
-                                                  <option value="TD">Chad</option>
-                                                  <option value="CL">Chile</option>
-                                                  <option value="CN">China</option>
-                                                  <option value="CX">Christmas Island</option>
-                                                  <option value="CC">Cocos (Keeling) Islands</option>
-                                                  <option value="CO">Colombia</option>
-                                                  <option value="KM">Comoros</option>
-                                                  <option value="CG">Congo</option>
-                                                  <option value="CD">Congo, the Democratic Republic of the</option>
-                                                  <option value="CK">Cook Islands</option>
-                                                  <option value="CR">Costa Rica</option>
-                                                  <option value="CI">Cote D'Ivoire</option>
-                                                  <option value="HR">Croatia</option>
-                                                  <option value="CU">Cuba</option>
-                                                  <option value="CY">Cyprus</option>
-                                                  <option value="CZ">Czech Republic</option>
-                                                  <option value="DK">Denmark</option>
-                                                  <option value="DJ">Djibouti</option>
-                                                  <option value="DM">Dominica</option>
-                                                  <option value="DO">Dominican Republic</option>
-                                                  <option value="EC">Ecuador</option>
-                                                  <option value="EG">Egypt</option>
-                                                  <option value="SV">El Salvador</option>
-                                                  <option value="GQ">Equatorial Guinea</option>
-                                                  <option value="ER">Eritrea</option>
-                                                  <option value="EE">Estonia</option>
-                                                  <option value="ET">Ethiopia</option>
-                                                  <option value="FK">Falkland Islands (Malvinas)</option>
-                                                  <option value="FO">Faroe Islands</option>
-                                                  <option value="FJ">Fiji</option>
-                                                  <option value="FI">Finland</option>
-                                                  <option value="FR">France</option>
-                                                  <option value="GF">French Guiana</option>
-                                                  <option value="PF">French Polynesia</option>
-                                                  <option value="TF">French Southern Territories</option>
-                                                  <option value="GA">Gabon</option>
-                                                  <option value="GM">Gambia</option>
-                                                  <option value="GE">Georgia</option>
-                                                  <option value="DE">Germany</option>
-                                                  <option value="GH">Ghana</option>
-                                                  <option value="GI">Gibraltar</option>
-                                                  <option value="GR">Greece</option>
-                                                  <option value="GL">Greenland</option>
-                                                  <option value="GD">Grenada</option>
-                                                  <option value="GP">Guadeloupe</option>
-                                                  <option value="GU">Guam</option>
-                                                  <option value="GT">Guatemala</option>
-                                                  <option value="GN">Guinea</option>
-                                                  <option value="GW">Guinea-Bissau</option>
-                                                  <option value="GY">Guyana</option>
-                                                  <option value="HT">Haiti</option>
-                                                  <option value="HM">Heard Island and Mcdonald Islands</option>
-                                                  <option value="VA">Holy See (Vatican City State)</option>
-                                                  <option value="HN">Honduras</option>
-                                                  <option value="HK">Hong Kong</option>
-                                                  <option value="HU">Hungary</option>
-                                                  <option value="IS">Iceland</option>
-                                                  <option value="IN">India</option>
-                                                  <option value="ID">Indonesia</option>
-                                                  <option value="IR">Iran, Islamic Republic of</option>
-                                                  <option value="IQ">Iraq</option>
-                                                  <option value="IE">Ireland</option>
-                                                  <option value="IL">Israel</option>
-                                                  <option value="IT">Italy</option>
-                                                  <option value="JM">Jamaica</option>
-                                                  <option value="JP">Japan</option>
-                                                  <option value="JO">Jordan</option>
-                                                  <option value="KZ">Kazakhstan</option>
-                                                  <option value="KE">Kenya</option>
-                                                  <option value="KI">Kiribati</option>
-                                                  <option value="KP">Korea, Democratic People's Republic of</option>
-                                                  <option value="KR">Korea, Republic of</option>
-                                                  <option value="KW">Kuwait</option>
-                                                  <option value="KG">Kyrgyzstan</option>
-                                                  <option value="LA">Lao People's Democratic Republic</option>
-                                </select>
-                              </div>
-                        </div>
-                      </div>
-                      
-                      <button type="submit" class="btn btn-primary submit_button">Add Store</button>
-                   </form>
-
+              <h4>Add the shortcode [store-finder] on the new page or whichever page you’d like to display it.</h4>
+            </div>
+            <div class="work">
+              <h3>02. Add your Stores</h3>
+              <div class="shortcode_img_box">
+                <img src="<?php echo esc_url(STOREFIND_DIR_URL .'assets/image/create-store.jpg'); ?>" alt="">
               </div>
+              <h4>Remove the dummy stores through Manage Stores and add your own store locations.</h4>
+            </div>
+           </div>
         </div>
     <?php
   }
@@ -594,9 +402,9 @@ class Store_Finder_Menu_Page_Add{
                 </div>
 
                 <div id="overlay">
-                <div class="cv-spinner">
-                  <span class="cspinner"></span>
-                </div>
+                  <div class="cv-spinner">
+                    <span class="cspinner"></span>
+                  </div>
               </div>
         </div>
     <?php
@@ -863,7 +671,7 @@ class Store_Finder_Menu_Page_Add{
                                   "NL" => "Netherlands",
                                   "AN" => "Netherlands Antilles",
                                   "NC" => "New Caledonia",
-                                    );
+                                );
    ?>
                                <select id="country-select" class="form-control" name="countrySelect" required>
                                     <option>Select one</option>

@@ -1,12 +1,12 @@
+
 import { produce } from 'immer';
 import { useEffect, useState } from 'react';
-
 // Settings Components
 import { tabController } from '../../Components/utils/functions';
 
 import Settings from './Settings';
 import Style from './Style';
-import { StoreFinderForm } from './components/StoreFinderForm';
+
 
 const Edit = props => {
 	const { className, attributes, setAttributes, clientId, isSelected } = props;
@@ -36,11 +36,7 @@ const Edit = props => {
 			<Style attributes={attributes} clientId={clientId} />
 
 			<div className={`storefindStoreFinder columns-${columns.desktop} columns-tablet-${columns.tablet} columns-mobile-${columns.mobile} ${layout || 'vertical'}`}>
-
-				<StoreFinderForm attributes={attributes} setAttributes={setAttributes} />
-
-
-
+				<span>Preview Will Show in Frontend</span>
 			</div>
 		</div>
 	</>;

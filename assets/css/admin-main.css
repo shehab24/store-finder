@@ -115,3 +115,34 @@ ul.action_ul li:nth-child(2) {
 .is-hide {
   display: none;
 }
+.page_header_div {
+  width: 100%;
+  background-color: #3c01cd;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+}
+.page_header_div h2 {
+  margin: 0;
+  padding: 0;
+}
+.working_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.working_div .work {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.working_div .work h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
