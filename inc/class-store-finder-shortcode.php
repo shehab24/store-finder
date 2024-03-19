@@ -7,6 +7,8 @@ class Store_Finder_Shortcode{
       add_action('wp_ajax_nopriv_get_continent_based_country', array($this,'get_continent_based_country_callback'));
        add_action('wp_ajax_get_data_based_country_continent', array($this,'get_data_based_country_continent_callback'));
       add_action('wp_ajax_nopriv_get_data_based_country_continent', array($this,'get_data_based_country_continent_callback'));
+       add_action('wp_ajax_get_data_based_post_code', array($this,'get_data_based_post_code_callback'));
+      add_action('wp_ajax_nopriv_get_data_based_post_code', array($this,'get_data_based_post_code_callback'));
   }
 
   public function wpEnqueueScripts(){
@@ -22,22 +24,40 @@ class Store_Finder_Shortcode{
     ob_start(); 
     ?>
         <div class="select_box">
-          <div class="select_child_box">
-            <select name="" id="getContinent">
-              <option value="">Continent*</option>
-                <option value="Africa">Africa</option>
-                <option value="Antarctica">Antarctica</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option>
-                <option value="NorthAmerica">North America</option>
-                <option value="Oceania">Oceania</option>
-                <option value="SouthAmerica">South America</option>
-            </select>
+          <div class="select_box_content">
+            <div class="select_content active ">
+                  <div class="select_child_box">
+                    <select name="" id="getContinent">
+                      <option value="">Continent*</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="NorthAmerica">North America</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="SouthAmerica">South America</option>
+                    </select>
+                  </div>
+                  <div class="select_child_box">
+                    <select name="" id="getCountry">
+                      <option value="">Country/Region *</option>
+                    </select>
+                  </div>
+            </div>
+            
+            <div class="post_input_content ">
+              <div class="postcode_input_box">
+                  <input type="number" name="" placeholder="Search by Postcode" id="postcode_search_field">
+                </div>
+                <div class="postcode_search_box">
+                  <button id="postcode_search_button">Search</button>
+                </div>
+            </div>
+             
           </div>
-          <div class="select_child_box">
-            <select name="" id="getCountry">
-              <option value="">Country/Region *</option>
-            </select>
+         
+          <div class="search_by_zip_box">
+            <button class="repeat_cng"><i class="fa-solid fa-repeat"></i></button>
           </div>
         </div>
         <div class="show_store_search_result">
@@ -392,6 +412,43 @@ class Store_Finder_Shortcode{
         endforeach ;
         $html = ob_get_clean();
     wp_send_json_success(array("Con" => $continent , "country"=>$countryVal , "html"=>$html));
+    wp_die();
+  }
+  public function get_data_based_post_code_callback(){
+     $postcode_search_field = $_REQUEST['postcode_search_field'];
+      global $wpdb;
+        $table_name = $wpdb->prefix . 'strfn_all_store_data_save'; 
+
+         $results = $wpdb->get_results(
+            $wpdb->prepare(
+               "SELECT * FROM $table_name WHERE store_postcode =%d ",
+               $postcode_search_field 
+            )
+         );
+
+         ob_start();
+         foreach($results as $result) :
+         ?>
+          <tr>
+                <td class="store_content">
+                  <span><?php echo esc_html($result->store_name) ; ?></span>
+                    <ul>
+                      <li><span><i class="fa-solid fa-location-dot"></i> <?php echo esc_html($result->store_address) ; ?></span></li>
+                      <li><span><i class="fa-regular fa-clock"></i> <?php echo esc_html($result->store_open_close) ; ?></span></li>
+                      <li><span><i class="fa-solid fa-phone"></i> <?php echo esc_html($result->store_mobile) ; ?></span></li>
+                      <li><span><i class="fa-solid fa-envelope"></i> <?php echo esc_html($result->store_email) ; ?></span></li>
+                      <li>
+                        <div class="website_link_div">
+                          <a href="<?php echo esc_url($result->store_map) ; ?>">Direction</a><a href="<?php echo esc_url($result->store_website) ; ?>">Website</a>
+                        </div>
+                    </li>
+                    </ul>
+                </td>
+            </tr>
+        <?php
+        endforeach ;
+        $html = ob_get_clean();
+    wp_send_json_success(array("postcode_search_field"=>$postcode_search_field , "html"=>$html));
     wp_die();
   }
 }

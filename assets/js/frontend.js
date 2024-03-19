@@ -56,4 +56,34 @@ jQuery(document).ready(function ($) {
 
   });
 
+  $(".repeat_cng").on("click", function () {
+
+    $(".post_input_content").toggleClass("active");
+    $(".select_content").toggleClass("active");
+  });
+
+  $('#postcode_search_button').on('click', function (e) {
+    var postcode_search_field = $("#postcode_search_field").val();
+    $("#overlay").fadeIn(300);
+    $.ajax({
+      type: 'POST',
+      // eslint-disable-next-line no-undef
+      url: ajax_obj.ajaxurl, // WordPress ajax URL
+      data: {
+        action: 'get_data_based_post_code', // Action hook for your WordPress function
+        postcode_search_field,
+      },
+      success(response) {
+        console.log(response);
+        $("#searchTableContent").html(response.data.html);
+        $("#overlay").fadeOut(300);
+      },
+      error(xhr, status, error) {
+        // Handle error
+        console.log(error);
+      }
+    });
+
+  });
+
 });

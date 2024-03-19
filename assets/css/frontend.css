@@ -2,6 +2,13 @@
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.select_box_content {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .select_child_box {
   width: 50%;
@@ -108,4 +115,58 @@
 .is-hide {
   display: none;
 }
-
+.search_by_zip_box {
+  position: absolute;
+  right: 0;
+  width: 6%;
+}
+.search_by_zip_box button {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+.postcode_input_box {
+  width: 80%;
+}
+.postcode_input_box input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+}
+.postcode_search_box {
+  width: 20%;
+}
+.postcode_search_box button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.select_content {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  display: none;
+}
+.select_content.active {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.post_input_content {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  display: none;
+}
+.post_input_content.active {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+}
