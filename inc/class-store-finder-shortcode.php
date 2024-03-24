@@ -89,6 +89,7 @@ class Store_Finder_Shortcode{
         switch($continent) {
         case "Africa":
             $africaCountries = array(
+              "null" => "Select a Country",
               "DZ" => "Algeria",
               "AO" => "Angola",
               "BJ" => "Benin",
@@ -160,6 +161,7 @@ class Store_Finder_Shortcode{
           break;
         case "Asia":
             $asiaCountry = array(
+              "null" => "Select a Country",
               "AF" => "Afghanistan",
               "AM" => "Armenia",
               "AZ" => "Azerbaijan",
@@ -220,6 +222,7 @@ class Store_Finder_Shortcode{
         break;
       case "Europe":
           $european_countries = array(
+            "null" => "Select a Country",
             "AL" => "Albania",
             "AD" => "Andorra",
             "AM" => "Armenia",
@@ -281,6 +284,7 @@ class Store_Finder_Shortcode{
         break;
       case "NorthAmerica":
         $north_american_countries = array(
+            "null" => "Select a Country",
             "AG" => "Antigua and Barbuda",
             "BS" => "Bahamas",
             "BB" => "Barbados",
@@ -316,6 +320,7 @@ class Store_Finder_Shortcode{
         break;
       case "Oceania":
           $oceania_countries = array(
+            "null" => "Select a Country",
             "AU" => "Australia",
             "FJ" => "Fiji",
             "KI" => "Kiribati",
@@ -341,6 +346,7 @@ class Store_Finder_Shortcode{
         break;
       case "SouthAmerica":
         $south_america_countries = array(
+          "null" => "Select a Country",
           "AR" => "Argentina",
           "BO" => "Bolivia",
           "BR" => "Brazil",
@@ -421,7 +427,7 @@ class Store_Finder_Shortcode{
 
          $results = $wpdb->get_results(
             $wpdb->prepare(
-               "SELECT * FROM $table_name WHERE store_postcode =%d ",
+               "SELECT * FROM $table_name WHERE store_postcode =%s ",
                $postcode_search_field 
             )
          );
