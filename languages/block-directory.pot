@@ -9,12 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-13T11:25:21+01:00\n"
+"POT-Creation-Date: 2024-03-21T13:03:14+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: store-finder\n"
 
 #. Plugin Name of the plugin
+#: inc/store-finder-menu-page.php:19
+#: inc/store-finder-menu-page.php:20
 msgid "Store Finder"
 msgstr ""
 
@@ -30,176 +32,72 @@ msgstr ""
 msgid "http://bplugins.com"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13491
-msgid "Vertical"
+#: inc/store-finder-menu-page.php:30
+#: inc/store-finder-menu-page.php:31
+msgid "Dashboard"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13492
-msgid "Horizontal"
+#: inc/store-finder-menu-page.php:39
+#: inc/store-finder-menu-page.php:40
+msgid "Add New Store"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13496
-msgid "General"
+#: inc/store-finder-menu-page.php:47
+#: inc/store-finder-menu-page.php:48
+msgid "Manage Store"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13497
-msgid "Style"
+#: inc/store-finder-menu-page.php:55
+#: inc/store-finder-menu-page.php:56
+msgid "Edit Store"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13567
-msgid "Add or Remove Items"
+#: inc/store-finder-menu-page.php:214
+msgid "Serial No"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13571
-msgid "Number:"
+#: inc/store-finder-menu-page.php:215
+msgid "Store Name"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13573
-msgid "Text:"
+#: inc/store-finder-menu-page.php:216
+msgid "Address"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13577
-msgid "Remove"
+#: inc/store-finder-menu-page.php:217
+msgid "Mobile"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13579
-msgid "Duplicate"
+#: inc/store-finder-menu-page.php:218
+msgid "Email"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13584
-msgid "Add New Card"
+#: inc/store-finder-menu-page.php:219
+msgid "Website"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13589
-msgid "Component Settings"
+#: inc/store-finder-menu-page.php:220
+msgid "Map"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13590
-#: dist/editor.js:13592
-msgid "Toggle?"
+#: inc/store-finder-menu-page.php:221
+msgid "Postcode"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13595
-msgid "Layout:"
+#: inc/store-finder-menu-page.php:222
+msgid "Opening Time"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13602
-#: dist/editor.js:13637
-msgid "Some settings may change when layout will be changed."
+#: inc/store-finder-menu-page.php:223
+msgid "Continent"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13609
-msgid "Width:"
+#: inc/store-finder-menu-page.php:224
+msgid "Country"
 msgstr ""
 
-#: dist/editor.js:1
-#: dist/editor.js:13610
-msgid "Keep width 0, to auto width."
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13614
-msgid "Custom Components"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13616
-msgid "Columns:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13621
-msgid "Column Gap:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13623
-msgid "Row Gap:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13625
-msgid "Enter Image URL"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13630
-msgid "Position:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13643
-msgid "Custom Style"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13644
-msgid "Background:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13646
-msgid "Typography:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13648
-msgid "Color:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13652
-msgid "Padding:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13656
-msgid "Margin:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13658
-msgid "Border:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13660
-msgid "Shadow:"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13673
-msgid "Store Finder in left"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13674
-msgid "Store Finder in center"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13675
-msgid "Store Finder in right"
-msgstr ""
-
-#: dist/editor.js:1
-#: dist/editor.js:13926
-msgid "Write Content"
+#: inc/store-finder-menu-page.php:225
+msgid "Action"
 msgstr ""
 
 #: inc/block.json

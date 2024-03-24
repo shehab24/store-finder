@@ -143,4 +143,28 @@ jQuery(document).ready(function ($) {
   })
 
 
+  $('#continent-select').on('change', function (e) {
+    var continentVal = $(this).val();
+    $("#overlay").fadeIn(300);
+    $.ajax({
+      type: 'POST',
+      // eslint-disable-next-line no-undef
+      url: ajax_object.ajaxurl, // WordPress ajax URL
+      data: {
+        action: 'get_continent_based_country', // Action hook for your WordPress function
+        continentVal
+      },
+      success(response) {
+        $("#overlay").fadeOut(300);
+        $("#country-select").html(response.data.html)
+      },
+      error(xhr, status, error) {
+        // Handle error
+        console.log(error);
+      }
+    });
+
+  });
+
+
 });
