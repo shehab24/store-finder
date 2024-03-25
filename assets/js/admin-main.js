@@ -11,7 +11,8 @@ jQuery(document).ready(function ($) {
       // eslint-disable-next-line no-undef
       url: ajax_object.ajaxurl, // WordPress ajax URL
       data: {
-        action: 'save_store_data_ajax', // Action hook for your WordPress function
+        action: 'save_store_data_ajax',
+        nonce: ajax_object.nonces.action_1, // Action hook for your WordPress function
         formData
       },
       success(response) {
@@ -60,7 +61,8 @@ jQuery(document).ready(function ($) {
       // eslint-disable-next-line no-undef
       url: ajax_object.ajaxurl, // WordPress ajax URL
       data: {
-        action: 'edit_store_data_ajax', // Action hook for your WordPress function
+        action: 'edit_store_data_ajax',
+        nonce: ajax_object.nonces.action_2, // Action hook for your WordPress function
         formData
       },
       success(response) {
@@ -106,7 +108,8 @@ jQuery(document).ready(function ($) {
       // eslint-disable-next-line no-undef
       url: ajax_object.ajaxurl, // WordPress ajax URL
       data: {
-        action: 'delete_store_data_ajax', // Action hook for your WordPress function
+        action: 'delete_store_data_ajax',
+        nonce: ajax_object.nonces.action_3, // Action hook for your WordPress function
         dataId
       },
       success(response) {
@@ -151,10 +154,12 @@ jQuery(document).ready(function ($) {
       // eslint-disable-next-line no-undef
       url: ajax_object.ajaxurl, // WordPress ajax URL
       data: {
-        action: 'get_continent_based_country', // Action hook for your WordPress function
+        action: 'get_continent_based_country',
+        nonce: ajax_object.nonces.action_4, // Action hook for your WordPress function
         continentVal
       },
       success(response) {
+        console.log(response);
         $("#overlay").fadeOut(300);
         $("#country-select").html(response.data.html)
       },

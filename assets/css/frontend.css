@@ -1,11 +1,19 @@
 .select_box {
   width: 100%;
+  height: 45px !important;
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 10px;
+}
+
+.select_child_box select {
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 .select_box_content {
-  width: 94%;
+  width: 93%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,39 +27,43 @@
 }
 .show_store_search_result {
   width: 100%;
-  border: 1px solid;
+  border: solid 1px #d4d7d9 !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   position: relative;
   height: 450px;
+  font-family: 'Courier New', Courier, monospace;
 }
+
 .search_box {
   position: absolute;
   width: 100%;
   box-sizing: border-box;
-  left: 0;
-  top: -10px;
-  padding: 8px;
-  background: #fff;
-  margin-top: 10px;
+  height: 45px;
 }
 
 .search_box input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  border: solid 1px #d4d7d9 !important;
+  font-family: 'Courier New', Courier, monospace;
+  height: 45px !important;
+}
+.search_box input:focus {
+  outline: none !important;
 }
 .search_result_content {
-  padding: 0px 10px;
+  padding: 0px 6px;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 .store_content {
   margin-top: 20px;
-  border-bottom: 1px solid #c3c3c3;
-  padding-bottom: 10px;
+  border: solid 1px #d4d7d9 !important;
+  padding: 10px;
 }
 .store_content ul {
   margin: 0px;
@@ -77,6 +89,7 @@
 .search_result_content table {
   margin-top: 60px;
   width: 100%;
+  border: none !important;
 }
 .search_result_content table tbody tr {
   padding: 5px 0px;
@@ -119,6 +132,7 @@
   position: absolute;
   right: 0;
   width: 6%;
+  height: 100%;
 }
 .search_by_zip_box button {
   padding: 10px;
@@ -128,23 +142,40 @@
   align-items: center;
   outline: none;
   cursor: pointer;
+  height: 45px !important;
+  border: solid 1px #d4d7d9 !important;
+}
+.search_by_zip_box button:focus {
+  outline: none;
 }
 .postcode_input_box {
-  width: 80%;
+  width: 85%;
 }
 .postcode_input_box input {
   width: 100%;
-  padding: 10px;
-  display: block;
+  height: 45px !important;
+  padding: 10px !important;
+  display: block !important;
   box-sizing: border-box;
+  border: solid 1px #d4d7d9 !important;
+  font-family: 'Courier New', Courier, monospace;
 }
+.postcode_input_box input:focus {
+  outline: none !important;
+}
+
 .postcode_search_box {
-  width: 20%;
+  width: 15%;
 }
 .postcode_search_box button {
   width: 100%;
-  padding: 10px;
   cursor: pointer;
+  border: solid 1px #d4d7d9 !important;
+  height: 45px !important;
+  font-family: 'Courier New', Courier, monospace;
+}
+.postcode_search_box button:focus {
+  outline: none !important;
 }
 .select_content {
   visibility: hidden;
@@ -157,6 +188,7 @@
   opacity: 1;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .post_input_content {
   visibility: hidden;
@@ -169,4 +201,33 @@
   opacity: 1;
   display: flex;
   justify-content: space-between;
+}
+.select_child_box #getCountry {
+  border: solid 1px #d4d7d9 !important;
+  width: 100%;
+  height: 45px;
+}
+.select_child_box #getCountry:focus {
+  outline: none !important;
+}
+.select_child_box #getContinent {
+  border: solid 1px #d4d7d9 !important;
+  width: 100%;
+  height: 45px;
+}
+.select_child_box #getContinent:focus {
+  outline: none !important;
+}
+.search_result_content::-webkit-scrollbar {
+  width: 5px;
+}
+.search_result_content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.search_result_content::-webkit-scrollbar-thumb {
+  background: #d4d7d9;
+}
+tr.default_row td {
+  border: none !important;
+  text-align: center !important;
 }
