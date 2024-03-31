@@ -342,7 +342,8 @@ class Store_Finder_Menu_Page_Add
     if (isset ($_GET['edit-id']))
     {
       // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-      $editID = $_GET['edit-id'];
+      $editID = isset ($_GET['edit-id']) ? absint($_GET['edit-id']) : 0;
+
       global $wpdb;
       $results = wp_cache_get('store_data_' . $editID);
       // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery
@@ -646,9 +647,9 @@ class Store_Finder_Menu_Page_Add
   public function adminEnqueueScripts($hook)
   {
     // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-    $current_page = isset ($_GET['page']) ? $_GET['page'] : '';
+    $current_page = isset ($_GET['page']) ? sanitize_text_field($_GET['page']) : '';
     // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-    $edit_id = isset ($_GET['edit-id']) ? $_GET['edit-id'] : '';
+    $edit_id = isset ($_GET['edit-id']) ? absint($_GET['edit-id']) : '';
     wp_enqueue_script("jquery");
     if (in_array($current_page, array('store-finder', 'add-new-store', 'manage-store')) || ($current_page === 'edit-store' && !empty ($edit_id)))
     {
@@ -688,18 +689,21 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $form_data = $_POST['formData']; // Retrieve form data
+    $form_data = isset ($_POST['formData']) ? wp_unslash($_POST['formData']) : ''; // Retrieve form data
     parse_str($form_data, $form_array);
-    $storeName = $form_array['storeName'];
-    $storeAddress = $form_array['storeAddress'];
-    $storeMobile = $form_array['storeMobile'];
-    $storeEmail = $form_array['storeEmail'];
-    $storeWebsite = $form_array['storeWebsite'];
-    $storeMap = $form_array['storeMap'];
-    $storePostcode = $form_array['storePostcode'];
-    $storeOpeningClosing = $form_array['storeOpeningClosing'];
-    $continentSelect = $form_array['continentSelect'];
-    $countrySelect = $form_array['countrySelect'];
+
+    // Sanitize each input value
+    $storeName = isset ($form_array['storeName']) ? sanitize_text_field($form_array['storeName']) : '';
+    $storeAddress = isset ($form_array['storeAddress']) ? sanitize_text_field($form_array['storeAddress']) : '';
+    $storeMobile = isset ($form_array['storeMobile']) ? sanitize_text_field($form_array['storeMobile']) : '';
+    $storeEmail = isset ($form_array['storeEmail']) ? sanitize_email($form_array['storeEmail']) : '';
+    $storeWebsite = isset ($form_array['storeWebsite']) ? esc_url_raw($form_array['storeWebsite']) : '';
+    $storeMap = isset ($form_array['storeMap']) ? esc_url_raw($form_array['storeMap']) : '';
+    $storePostcode = isset ($form_array['storePostcode']) ? absint($form_array['storePostcode']) : '';
+    $storeOpeningClosing = isset ($form_array['storeOpeningClosing']) ? sanitize_text_field($form_array['storeOpeningClosing']) : '';
+    $continentSelect = isset ($form_array['continentSelect']) ? sanitize_text_field($form_array['continentSelect']) : '';
+    $countrySelect = isset ($form_array['countrySelect']) ? sanitize_text_field($form_array['countrySelect']) : '';
+
     global $wpdb;
 
     $table_name = $wpdb->prefix . 'strfn_all_store_data_save';
@@ -739,18 +743,21 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $form_data = $_POST['formData']; // Retrieve form data
+    $form_data = isset ($_POST['formData']) ? wp_unslash($_POST['formData']) : ''; // Retrieve form data
     parse_str($form_data, $form_array);
-    $storeName = $form_array['storeName'];
-    $storeAddress = $form_array['storeAddress'];
-    $storeMobile = $form_array['storeMobile'];
-    $storeEmail = $form_array['storeEmail'];
-    $storeWebsite = $form_array['storeWebsite'];
-    $storeMap = $form_array['storeMap'];
-    $storePostcode = $form_array['storePostcode'];
-    $storeOpeningClosing = $form_array['storeOpeningClosing'];
-    $continentSelect = $form_array['continentSelect'];
-    $countrySelect = $form_array['countrySelect'];
+
+    // Sanitize each input value
+    $storeName = isset ($form_array['storeName']) ? sanitize_text_field($form_array['storeName']) : '';
+    $storeAddress = isset ($form_array['storeAddress']) ? sanitize_text_field($form_array['storeAddress']) : '';
+    $storeMobile = isset ($form_array['storeMobile']) ? sanitize_text_field($form_array['storeMobile']) : '';
+    $storeEmail = isset ($form_array['storeEmail']) ? sanitize_email($form_array['storeEmail']) : '';
+    $storeWebsite = isset ($form_array['storeWebsite']) ? esc_url_raw($form_array['storeWebsite']) : '';
+    $storeMap = isset ($form_array['storeMap']) ? esc_url_raw($form_array['storeMap']) : '';
+    $storePostcode = isset ($form_array['storePostcode']) ? absint($form_array['storePostcode']) : '';
+    $storeOpeningClosing = isset ($form_array['storeOpeningClosing']) ? sanitize_text_field($form_array['storeOpeningClosing']) : '';
+    $continentSelect = isset ($form_array['continentSelect']) ? sanitize_text_field($form_array['continentSelect']) : '';
+    $countrySelect = isset ($form_array['countrySelect']) ? sanitize_text_field($form_array['countrySelect']) : '';
+
     global $wpdb;
 
     $table_name = $wpdb->prefix . 'strfn_all_store_data_save';
@@ -805,7 +812,8 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $dataId = $_POST['dataId']; // Retrieve form data
+    $dataId = isset ($_POST['dataId']) ? absint($_POST['dataId']) : 0;
+    // Retrieve form data
 
     global $wpdb;
     $table_name = $wpdb->prefix . 'strfn_all_store_data_save';

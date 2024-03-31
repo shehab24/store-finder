@@ -1,7 +1,8 @@
 <?php
 
-class Store_Finder_Activation{
-   public function __construct()
+class Store_Finder_Activation
+{
+    public function __construct()
     {
         $this->activation_store_finder_callback();
 
@@ -9,8 +10,9 @@ class Store_Finder_Activation{
     }
 
 
-    public function activation_store_finder_callback(){
-      global $wpdb;
+    public function activation_store_finder_callback()
+    {
+        global $wpdb;
 
         $table_name = $wpdb->prefix . 'strfn_all_store_data_save';
 

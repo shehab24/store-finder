@@ -11,12 +11,15 @@
  */
 
 // ABS PATH
-if ( !defined( 'ABSPATH' ) ) { exit; }
+if (!defined('ABSPATH'))
+{
+    exit;
+}
 
 // Constant
-define( 'STOREFIND_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.0.0' );
-define( 'STOREFIND_DIR_URL', plugin_dir_url( __FILE__ ) );
-define( 'STOREFIND_DIR_PATH', plugin_dir_path( __FILE__ ) );
+define('STOREFIND_VERSION', isset ($_SERVER['HTTP_HOST']) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.0.0');
+define('STOREFIND_DIR_URL', plugin_dir_url(__FILE__));
+define('STOREFIND_DIR_PATH', plugin_dir_path(__FILE__));
 
 require_once STOREFIND_DIR_PATH . 'inc/block.php';
 require_once STOREFIND_DIR_PATH . 'inc/store-finder-menu-page.php';

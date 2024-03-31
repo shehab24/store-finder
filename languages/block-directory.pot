@@ -9,18 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2024-03-24T05:07:34+01:00\n"
-=======
-"POT-Creation-Date: 2024-03-21T13:03:14+01:00\n"
->>>>>>> 6acfce7b440e26083b149a5df8d70fb50bf8c1e7
+"POT-Creation-Date: 2024-03-25T08:07:17+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: store-finder\n"
 
 #. Plugin Name of the plugin
-#: inc/store-finder-menu-page.php:19
-#: inc/store-finder-menu-page.php:20
+#: inc/store-finder-menu-page.php:22
+#: inc/store-finder-menu-page.php:23
 msgid "Store Finder"
 msgstr ""
 
@@ -36,119 +32,71 @@ msgstr ""
 msgid "http://bplugins.com"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:30
-#: inc/store-finder-menu-page.php:31
+#: inc/store-finder-menu-page.php:33
+#: inc/store-finder-menu-page.php:34
 msgid "Dashboard"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:39
-#: inc/store-finder-menu-page.php:40
+#: inc/store-finder-menu-page.php:42
+#: inc/store-finder-menu-page.php:43
 msgid "Add New Store"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:47
-#: inc/store-finder-menu-page.php:48
+#: inc/store-finder-menu-page.php:50
+#: inc/store-finder-menu-page.php:51
 msgid "Manage Store"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:55
-#: inc/store-finder-menu-page.php:56
+#: inc/store-finder-menu-page.php:58
+#: inc/store-finder-menu-page.php:59
 msgid "Edit Store"
 msgstr ""
 
-<<<<<<< HEAD
-#: inc/store-finder-menu-page.php:334
+#: inc/store-finder-menu-page.php:232
 msgid "Serial No"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:335
+#: inc/store-finder-menu-page.php:235
 msgid "Store Name"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:336
+#: inc/store-finder-menu-page.php:238
 msgid "Address"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:337
+#: inc/store-finder-menu-page.php:241
 msgid "Mobile"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:338
+#: inc/store-finder-menu-page.php:244
 msgid "Email"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:339
+#: inc/store-finder-menu-page.php:247
 msgid "Website"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:340
+#: inc/store-finder-menu-page.php:250
 msgid "Map"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:341
+#: inc/store-finder-menu-page.php:253
 msgid "Postcode"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:342
+#: inc/store-finder-menu-page.php:256
 msgid "Opening Time"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:343
+#: inc/store-finder-menu-page.php:259
 msgid "Continent"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:344
+#: inc/store-finder-menu-page.php:262
 msgid "Country"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:345
-=======
-#: inc/store-finder-menu-page.php:214
-msgid "Serial No"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:215
-msgid "Store Name"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:216
-msgid "Address"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:217
-msgid "Mobile"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:218
-msgid "Email"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:219
-msgid "Website"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:220
-msgid "Map"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:221
-msgid "Postcode"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:222
-msgid "Opening Time"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:223
-msgid "Continent"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:224
-msgid "Country"
-msgstr ""
-
-#: inc/store-finder-menu-page.php:225
->>>>>>> 6acfce7b440e26083b149a5df8d70fb50bf8c1e7
+#: inc/store-finder-menu-page.php:265
 msgid "Action"
 msgstr ""
 

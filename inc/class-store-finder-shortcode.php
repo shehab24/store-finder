@@ -3,7 +3,7 @@ class Store_Finder_Shortcode
 {
   public function __construct()
   {
-    add_shortcode("store-finder", [$this, "shortcode_callback_function"]);
+    add_shortcode("store-finder", [$this, "strfn_shortcode_callback_function"]);
     add_action('wp_enqueue_scripts', [$this, 'wpEnqueueScripts']);
     add_action('wp_ajax_get_continent_based_country', array($this, 'get_continent_based_country_callback'));
     add_action('wp_ajax_nopriv_get_continent_based_country', array($this, 'get_continent_based_country_callback'));
@@ -17,9 +17,11 @@ class Store_Finder_Shortcode
   {
     wp_enqueue_script("jquery");
 
-    wp_enqueue_style('strfn-frontend-css', STOREFIND_DIR_URL . 'assets/css/frontend.css', [], STOREFIND_VERSION, "screen");
-    wp_enqueue_style('strfn-fontawesome-css', STOREFIND_DIR_URL . 'assets/css/font-awesome.min.css', [], STOREFIND_VERSION, "screen");
-
+    if (!is_admin())
+    {
+      wp_enqueue_style('strfn-frontend-css', STOREFIND_DIR_URL . 'assets/css/frontend.css', [], STOREFIND_VERSION, "screen");
+      wp_enqueue_style('strfn-fontawesome-css', STOREFIND_DIR_URL . 'assets/css/font-awesome.min.css', [], STOREFIND_VERSION, "screen");
+    }
     wp_enqueue_script('strfn-frontend-js', STOREFIND_DIR_URL . 'assets/js/frontend.js', [], STOREFIND_VERSION, true);
 
     $nonces = array(
@@ -32,7 +34,7 @@ class Store_Finder_Shortcode
     wp_localize_script('strfn-frontend-js', 'ajax_obj', array('ajaxurl' => admin_url('admin-ajax.php'), 'nonces' => $nonces, ));
   }
 
-  public function shortcode_callback_function()
+  public function strfn_shortcode_callback_function()
   {
 
     ob_start();
