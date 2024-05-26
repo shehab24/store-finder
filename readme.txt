@@ -25,7 +25,7 @@ Store Finder allows users to conveniently search and view nearby stores, providi
 
 
 = Feedback =
-- Did you like this plugin? Dislike it? Have a feature request? [Please share your feedback with us](mailto:support@bplugins.com 'Send feedback')
+- Did you like this plugin? Dislike it? Have a feature request? [Please share your feedback with us](mailto:support@indione.com 'Send feedback')
 
 
 = ⭐ Check out the Parent Plugin of this plugin- =
@@ -43,7 +43,6 @@ Store Finder allows users to conveniently search and view nearby stores, providi
 
 🔥 **[StreamCast](https://wordpress.org/plugins/streamcast)** – A fully-featured Radio Player Plugin for WordPress.
 
-🔥 **[3D Viewer](https://3d-viewer.bplugins.com/)** – Display interactive 3D models on the webs.
 
 == Installation ==
 

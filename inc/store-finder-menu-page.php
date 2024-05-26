@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; 
 class Store_Finder_Menu_Page_Add
 {
   public function __construct()
@@ -140,7 +141,7 @@ class Store_Finder_Menu_Page_Add
             <div class="input_field_div">
               <div class="mb-3">
                 <label for="storeMap" class="form-label">Enter Store Map Url</label>
-                <input type="url" class="form-control" id="storeMap" placeholder="https://maps.app.goo.gl/V29Fe6Hj5YcE8bfj8"
+                <input type="url" class="form-control" id="storeMap" placeholder="https://map.example.com/V29Fe6Hj5YcE8bfj8"
                   name="storeMap" required>
               </div>
             </div>
@@ -411,7 +412,7 @@ class Store_Finder_Menu_Page_Add
             <div class="input_field_div">
               <div class="mb-3">
                 <label for="storeMap" class="form-label">Enter Store Map Url</label>
-                <input type="url" class="form-control" id="storeMap" placeholder="https://maps.app.goo.gl/V29Fe6Hj5YcE8bfj8"
+                <input type="url" class="form-control" id="storeMap" placeholder="https://map.example.com/V29Fe6Hj5YcE8bfj8"
                   name="storeMap" value="<?php echo esc_attr($results[0]->store_map); ?>" required>
               </div>
             </div>
@@ -689,7 +690,7 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $form_data = isset ($_POST['formData']) ? wp_unslash($_POST['formData']) : ''; // Retrieve form data
+    $form_data = isset($_POST['formData']) ? sanitize_text_field(wp_unslash($_POST['formData'])) : '';
     parse_str($form_data, $form_array);
 
     // Sanitize each input value
@@ -743,7 +744,7 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $form_data = isset ($_POST['formData']) ? wp_unslash($_POST['formData']) : ''; // Retrieve form data
+    $form_data = isset($_POST['formData']) ? sanitize_text_field(wp_unslash($_POST['formData'])) : '';
     parse_str($form_data, $form_array);
 
     // Sanitize each input value

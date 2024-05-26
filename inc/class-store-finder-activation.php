@@ -1,5 +1,5 @@
 <?php
-
+if ( ! defined( 'ABSPATH' ) ) exit; 
 class Store_Finder_Activation
 {
     public function __construct()

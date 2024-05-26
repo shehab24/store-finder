@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; 
 class STOREFINDStoreFinder{
 	public function __construct(){
 		add_action( 'enqueue_block_assets', [$this, 'enqueueBlockAssets'] );
