@@ -18,31 +18,18 @@ jQuery(document).ready(function ($) {
       success(response) {
         if (response.data.status) {
           $("#overlay").fadeOut(300);
-          swal({
-            title: "Successfully added",
-            icon: "success",
-            timer: 2000,
-            confirmButtonText: "OK"
-          });
+          
+          confirm("Successfully added");
+
           $('#save_store_data_form').trigger('reset');
         } else {
-          swal({
-            title: "Something went wrong",
-            icon: "error",
-            timer: 2000,
-            confirmButtonText: "OK"
-          });
+          confirm("Something went wrong");
         }
 
       },
       error(xhr, status, error) {
         // Handle error
-        swal({
-          title: "Something went wrong",
-          icon: "error",
-          timer: 2000,
-          confirmButtonText: "OK"
-        });
+        confirm("Something went wrong");
       }
     });
   });
@@ -68,33 +55,21 @@ jQuery(document).ready(function ($) {
       success(response) {
         if (response.data.status) {
           $("#overlay").fadeOut(300);
-          swal({
-            title: "Updated successfully",
-            icon: "success",
-            buttons: "Go Back",
-          })
-            .then(() => {
-              window.location.href = response.data.url;
-            });
+          var confirmation = confirm("Updated successfully");
+
+          if(confirmation){
+            window.location.href = response.data.url;
+          }
 
         } else {
-          swal({
-            title: "Something went wrong",
-            type: "error",
-            timer: 2000,
-            confirmButtonText: "OK"
-          });
+          confirm("Something went wrong");
+
         }
 
       },
       error(xhr, status, error) {
         // Handle error
-        swal({
-          title: "Something went wrong",
-          type: "error",
-          timer: 2000,
-          confirmButtonText: "OK"
-        });
+        confirm("Something went wrong");
 
       }
     });
@@ -116,30 +91,17 @@ jQuery(document).ready(function ($) {
         if (response.data.status) {
           $("#overlay").fadeOut(300);
           $(`.table_row_id_${dataId}`).remove();
-          swal({
-            title: "Deleted successfully",
-            icon: "success",
-            buttons: "OK",
-          })
+          confirm("Deleted successfully");
+  
 
         } else {
-          swal({
-            title: "Something went wrong",
-            type: "error",
-            timer: 2000,
-            confirmButtonText: "OK"
-          });
+          confirm("Something went wrong");
         }
 
       },
       error(xhr, status, error) {
         // Handle error
-        swal({
-          title: "Something went wrong",
-          type: "error",
-          timer: 2000,
-          confirmButtonText: "OK"
-        });
+        confirm("Something went wrong");
 
       }
     });

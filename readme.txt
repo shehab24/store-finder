@@ -94,3 +94,22 @@ You can post your questions on the [support forum here](https://wordpress.org/su
 
 == Upgrade Notice ==
 
+
+== External Service Integration ==
+
+= Service Name: sweet-alert.min.js =
+- Docs link: https://sweetalert.js.org/guides/
+
+
+= Service Name: jquery.datatable.js =
+- Docs link: https://datatables.net/
+
+== Developer Notes ==
+* Beautiful and sweet alert using this file 
+assets/js/sweet-alert.min.js
+
+* Public source code GitHub link for review, study, and contribute.
+
+https://github.com/shehab24/store-finder
+
+For more information on how to contribute to this plugin, please visit our GitHub repository.

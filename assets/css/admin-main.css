@@ -53,11 +53,18 @@ select#continent-select {
   margin-top: 20px;
   padding: 20px;
 }
+table#manageStoreTable{
+  width: 100%;
+  display: block;
+  overflow: auto;
+}
 table#manageStoreTable th {
   text-align: center !important;
+  font-size: 14px;
 }
 table#manageStoreTable td {
   text-align: center !important;
+  font-size: 14px;
 }
 ul.action_ul {
   display: flex;
@@ -148,4 +155,19 @@ ul.action_ul li:nth-child(2) {
 }
 .dataTables_wrapper .dataTables_length select {
   width: 50px;
+}
+.input_field_div select {
+  height: 40px;
+}
+.working_div .work h3 {
+  font-size: 16px;
+}
+.working_div .work h4 {
+  font-size: 16px;
+}
+.dataTables_wrapper .dataTables_filter input {
+  height: 35px;
+}
+.dataTables_wrapper .dataTables_length select {
+  height: 35px;
 }

@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-23T19:01:29+02:00\n"
+"POT-Creation-Date: 2024-06-03T07:39:27+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: store-finder\n"
 
 #. Plugin Name of the plugin
-#: inc/store-finder-menu-page.php:22
 #: inc/store-finder-menu-page.php:23
+#: inc/store-finder-menu-page.php:24
 msgid "Store Finder"
 msgstr ""
 
@@ -32,72 +32,80 @@ msgstr ""
 msgid "https://profiles.wordpress.org/indionetech/"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:33
 #: inc/store-finder-menu-page.php:34
+#: inc/store-finder-menu-page.php:35
 msgid "Dashboard"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:42
 #: inc/store-finder-menu-page.php:43
+#: inc/store-finder-menu-page.php:44
 msgid "Add New Store"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:50
 #: inc/store-finder-menu-page.php:51
+#: inc/store-finder-menu-page.php:52
 msgid "Manage Store"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:58
 #: inc/store-finder-menu-page.php:59
+#: inc/store-finder-menu-page.php:60
 msgid "Edit Store"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:232
+#: inc/store-finder-menu-page.php:233
 msgid "Serial No"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:235
+#: inc/store-finder-menu-page.php:236
 msgid "Store Name"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:238
+#: inc/store-finder-menu-page.php:239
 msgid "Address"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:241
+#: inc/store-finder-menu-page.php:242
 msgid "Mobile"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:244
+#: inc/store-finder-menu-page.php:245
 msgid "Email"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:247
+#: inc/store-finder-menu-page.php:248
 msgid "Website"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:250
+#: inc/store-finder-menu-page.php:251
 msgid "Map"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:253
+#: inc/store-finder-menu-page.php:254
 msgid "Postcode"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:256
+#: inc/store-finder-menu-page.php:257
 msgid "Opening Time"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:259
+#: inc/store-finder-menu-page.php:260
 msgid "Continent"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:262
+#: inc/store-finder-menu-page.php:263
 msgid "Country"
 msgstr ""
 
-#: inc/store-finder-menu-page.php:265
+#: inc/store-finder-menu-page.php:266
 msgid "Action"
+msgstr ""
+
+#: assets/js/admin-post.js:6
+msgid "Copied Successfully!"
+msgstr ""
+
+#: assets/js/admin-post.js:7
+msgid "Copy To Clipboard"
 msgstr ""
 
 #: inc/block.json

@@ -104,42 +104,42 @@ class Store_Finder_Menu_Page_Add
         <form id="save_store_data_form">
           <div class="input_field_both">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeName" class="form-label">Email Store Name</label>
                 <input type="text" class="form-control" id="storeName" name="storeName" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeAddress" class="form-label">Enter Store Address</label>
                 <input type="text" class="form-control" id="storeAddress" name="storeAddress" required>
               </div>
             </div>
           </div>
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeMobile" class="form-label">Email Store Mobile</label>
                 <input type="number" class="form-control" id="storeMobile" name="storeMobile" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeEmail" class="form-label">Enter Store Email</label>
                 <input type="email" class="form-control" id="storeEmail" name="storeEmail" required>
               </div>
             </div>
           </div>
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeWebsite" class="form-label">Email Store Website</label>
                 <input type="url" class="form-control" id="storeWebsite" placeholder="https://example.com"
                   name="storeWebsite" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeMap" class="form-label">Enter Store Map Url</label>
                 <input type="url" class="form-control" id="storeMap" placeholder="https://map.example.com/V29Fe6Hj5YcE8bfj8"
                   name="storeMap" required>
@@ -147,15 +147,15 @@ class Store_Finder_Menu_Page_Add
             </div>
           </div>
 
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storePostcode" class="form-label">Email Postcode</label>
                 <input type="number" class="form-control" id="storePostcode" name="storePostcode" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeOpeningClosing" class="form-label">Enter Store Opening & Closing Time</label>
                 <input type="text" class="form-control" id="storeOpeningClosing" placeholder="11:00am to 8:00pm"
                   name="storeOpeningClosing" required>
@@ -163,7 +163,7 @@ class Store_Finder_Menu_Page_Add
             </div>
           </div>
 
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
               <div class="mb-3">
                 <label for="continent-select" class="form-label">Select Continent</label>
@@ -371,46 +371,46 @@ class Store_Finder_Menu_Page_Add
         <form id="edit_store_data_form" method="post">
           <div class="input_field_both">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeName" class="form-label">Enter Store Name</label>
                 <input type="text" class="form-control" id="storeName" name="storeName"
                   value="<?php echo esc_attr($results[0]->store_name); ?>" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeAddress" class="form-label">Enter Store Address</label>
                 <input type="text" class="form-control" id="storeAddress" name="storeAddress"
                   value="<?php echo esc_attr($results[0]->store_address); ?>" required>
               </div>
             </div>
           </div>
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeMobile" class="form-label">Enter Store Mobile</label>
                 <input type="number" class="form-control" id="storeMobile" name="storeMobile"
                   value="<?php echo esc_attr($results[0]->store_mobile); ?>" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeEmail" class="form-label">Enter Store Email</label>
                 <input type="email" class="form-control" id="storeEmail" name="storeEmail"
                   value="<?php echo esc_attr($results[0]->store_email); ?>" required>
               </div>
             </div>
           </div>
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeWebsite" class="form-label">Enter Store Website</label>
                 <input type="url" class="form-control" id="storeWebsite" placeholder="https://example.com"
                   name="storeWebsite" value="<?php echo esc_attr($results[0]->store_website); ?>" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeMap" class="form-label">Enter Store Map Url</label>
                 <input type="url" class="form-control" id="storeMap" placeholder="https://map.example.com/V29Fe6Hj5YcE8bfj8"
                   name="storeMap" value="<?php echo esc_attr($results[0]->store_map); ?>" required>
@@ -418,16 +418,16 @@ class Store_Finder_Menu_Page_Add
             </div>
           </div>
 
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storePostcode" class="form-label">Enter Postcode</label>
                 <input type="number" class="form-control" id="storePostcode" name="storePostcode"
                   value="<?php echo esc_attr($results[0]->store_postcode); ?>" required>
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="storeOpeningClosing" class="form-label">Enter Store Opening & Closing Time</label>
                 <input type="text" class="form-control" id="storeOpeningClosing" placeholder="11:00am to 8:00pm"
                   name="storeOpeningClosing" value="<?php echo esc_attr($results[0]->store_open_close); ?>" required>
@@ -435,9 +435,9 @@ class Store_Finder_Menu_Page_Add
             </div>
           </div>
 
-          <div class="input_field_both mt-4">
+          <div class="input_field_both ">
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="continent-select" class="form-label">Select Continent</label>
                 <?php
                 $continents = array(
@@ -462,7 +462,7 @@ class Store_Finder_Menu_Page_Add
               </div>
             </div>
             <div class="input_field_div">
-              <div class="mb-3">
+              <div class="">
                 <label for="country-select" class="form-label">Select Country</label>
                 <?php
                 $countries = array(
@@ -657,10 +657,8 @@ class Store_Finder_Menu_Page_Add
       wp_enqueue_style('jquery-data-tablecss', STOREFIND_DIR_URL . 'assets/css/jquery.dataTables.css', [], STOREFIND_VERSION);
       wp_enqueue_style('strfn-bootstrap-css', STOREFIND_DIR_URL . 'assets/css/bootstrap.min.css', [], STOREFIND_VERSION);
       wp_enqueue_style('strfn-fontawesome-css', STOREFIND_DIR_URL . 'assets/css/font-awesome.min.css', [], STOREFIND_VERSION);
-      wp_enqueue_style('strfn-sweetalert-css', STOREFIND_DIR_URL . 'assets/css/sweet-alert.css', [], STOREFIND_VERSION);
       wp_enqueue_style('strfn-admin-main-css', STOREFIND_DIR_URL . 'assets/css/admin-main.css', [], STOREFIND_VERSION);
       wp_enqueue_script('jquery-data-tablejs', STOREFIND_DIR_URL . 'assets/js/jquery.dataTables.js', [], STOREFIND_VERSION, true);
-      wp_enqueue_script('strfn-sweetalert-js', STOREFIND_DIR_URL . 'assets/js/sweet-alert.min.js', [], STOREFIND_VERSION, true);
       wp_enqueue_script('strfn-bootstrap-js', STOREFIND_DIR_URL . 'assets/js/bootstrap.min.js', [], STOREFIND_VERSION, true);
     }
 
@@ -690,7 +688,7 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $form_data = isset($_POST['formData']) ? sanitize_text_field(wp_unslash($_POST['formData'])) : '';
+    $form_data = isset($_POST['formData']) ? filter_var($_POST['formData'], FILTER_SANITIZE_STRING): '';
     parse_str($form_data, $form_array);
 
     // Sanitize each input value
@@ -744,7 +742,7 @@ class Store_Finder_Menu_Page_Add
       echo 'Nonce verification failed!';
       return;
     }
-    $form_data = isset($_POST['formData']) ? sanitize_text_field(wp_unslash($_POST['formData'])) : '';
+    $form_data = isset($_POST['formData']) ? filter_var($_POST['formData'], FILTER_SANITIZE_STRING): '';
     parse_str($form_data, $form_array);
 
     // Sanitize each input value
